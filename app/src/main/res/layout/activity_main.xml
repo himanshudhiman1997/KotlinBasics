@@ -41,5 +41,14 @@
         android:layout_centerHorizontal="true"
         android:text="Explicit" />
 
+    <Button
+        android:id="@+id/recyclerViewDemoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/explicitButton"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Recycler View Demo" />
+
 
 </RelativeLayout>
