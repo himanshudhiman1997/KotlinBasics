@@ -1,9 +1,11 @@
-package com.example.myapplication
+package com.example.myapplication.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.example.myapplication.R
+import com.example.myapplication.showToast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -12,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         buttonToast.setOnClickListener {
-            Toast.makeText(this, "Himanshu", Toast.LENGTH_LONG).show()
+            showToast("Himanshu")
         }
 
 

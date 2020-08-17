@@ -1,8 +1,10 @@
-package com.example.myapplication
+package com.example.myapplication.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.example.myapplication.R
+import com.example.myapplication.showToast
 import kotlinx.android.synthetic.main.activity_second2.*
 
 class SecondActivity : AppCompatActivity() {
@@ -14,7 +16,7 @@ class SecondActivity : AppCompatActivity() {
 
         val msg = bundle!!.getString("value")
 
-        Toast.makeText(this, msg, Toast.LENGTH_LONG).show()
+        showToast(msg.toString())
 
         textFromPrevious.text = msg
 

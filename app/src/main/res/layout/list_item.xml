@@ -37,7 +37,7 @@
                 android:layout_width="30dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:src="@android:drawable/ic_menu_share"
+                android:src="@android:drawable/stat_notify_more"
                 android:tint="#eeeeee"/>
 
         </LinearLayout>
