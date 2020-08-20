@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.example.myapplication.Constants
 import com.example.myapplication.R
 import com.example.myapplication.showToast
 import kotlinx.android.synthetic.main.activity_main.*
@@ -22,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         editButtonSave.setOnClickListener {
 
             val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra("value", message)
+            intent.putExtra(Constants.USER_MSG_KEY, message)
             startActivity(intent)
         }
 

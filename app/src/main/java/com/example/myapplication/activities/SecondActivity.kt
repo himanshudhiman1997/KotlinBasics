@@ -3,6 +3,7 @@ package com.example.myapplication.activities
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.example.myapplication.Constants
 import com.example.myapplication.R
 import com.example.myapplication.showToast
 import kotlinx.android.synthetic.main.activity_second2.*
@@ -14,11 +15,14 @@ class SecondActivity : AppCompatActivity() {
 
         val bundle: Bundle? = intent.extras
 
-        val msg = bundle!!.getString("value")
+        bundle?.let {
 
-        showToast(msg.toString())
+            val msg = bundle.getString(Constants.USER_MSG_KEY)
 
-        textFromPrevious.text = msg
+            showToast(msg.toString())
+
+            textFromPrevious.text = msg
+        }
 
     }
 }
